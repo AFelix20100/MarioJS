@@ -1,20 +1,20 @@
 function moveRight(countRight)
 {
     let mario = $("#mario").position();
-    $('#mario img').attr('src','../img/move_right/frame-'+countRight+'.png');
+    $('#mario img').attr('src','./img/move_right/frame-'+countRight+'.png');
     $('#mario').css({left:mario.left+7}); 
 }
 function moveLeft(countLeft)
 {
     let mario = $("#mario").position();
-    $('#mario img').attr('src','../img/move_left/frame-'+countLeft+'.png');
+    $('#mario img').attr('src','./img/move_left/frame-'+countLeft+'.png');
     $('#mario').css({left:mario.left-7});
 }
 function jumpUpRight()
 {
     let mario = $("#mario").position();
     $("#mario").animate({top:mario.top = mario.top - 100},'fast');
-    $('#mario img').attr('src','../img/jump-right.png');
+    $('#mario img').attr('src','./img/jump-right.png');
     $(document).keydown(false);
     $("#mario").animate({top:mario.top = mario.top + 100},'fast');
     //$('#mario img').attr('src','../img/stand-up.png');
@@ -152,7 +152,7 @@ $( document ).ready(function()
             //return false;
         }
     });
-    $('#mario img').attr('src','../img/stand-up.png');
+    $('#mario img').attr('src','./img/stand-up.png');
     
     console.log( "ready!" );
     
